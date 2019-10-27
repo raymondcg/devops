@@ -1,6 +1,6 @@
 ﻿$SSH_PATH = "C:\Users\gille\.ssh"
 $WORKSPACE = "D:\workspace\devops\ansible"
-$PLAY = "deploy_webnerdbot"
+$PLAY = "docker_install"
 $DOCKER_PASSWORD = ""
 clear
 D:
