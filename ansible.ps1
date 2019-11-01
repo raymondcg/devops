@@ -1,7 +1,6 @@
-﻿$SSH_PATH = "C:\Users\gille\.ssh"
+﻿$SSH_PATH = ""
 $WORKSPACE = "D:\workspace\devops\ansible"
 $PLAY = "docker_install"
-$DOCKER_PASSWORD = ""
 clear
 D:
 cd $WORKSPACE
@@ -11,4 +10,4 @@ docker run --rm -i `
     -v $WORKSPACE\inventory:/etc/ansible `
     necrobraska/ansible-controller `
     ansible-playbook -i /etc/ansible/hosts.yml `
-    "$PLAY.yml" --extra-vars "docker_password=$DOCKER_PASSWORD"
+    "$PLAY.yml"
