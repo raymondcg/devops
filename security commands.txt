@@ -1,0 +1,8 @@
+# check to ensure only my IPs succeeded
+clear && grep "password for docker" /var/log/auth.log
+clear && grep "password for pi" /var/log/auth.log
+
+# List all IPs with failed attemps
+clear && grep "Failed password" /var/log/auth.log | grep -E -o "([0-9]{1,3}[.]){3}[0-9]{1,3}" | uniq -c | sort -nr
+
+clear && docker service logs webnerdbot_gateway

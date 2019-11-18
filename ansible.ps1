@@ -1,4 +1,4 @@
-﻿$SSH_PATH = ""
+﻿$SSH_PATH = "C:\Users\gille\.ssh"
 $WORKSPACE = "D:\workspace\devops\ansible"
 $PLAY = "docker_install"
 clear

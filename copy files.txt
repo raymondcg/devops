@@ -1,0 +1,6 @@
+scp -r from to
+scp -r "/c/Users/gille/Google Drive/bookdb" docker@webnerdbot.com:/
+
+scp -r docker@webnerdbot.com:/bookdb "/c/Users/gille/Google Drive/"
+
+scp -P 5936 -r "/c/Users/gille/Google Drive/sslforfree" docker@webnerdbot.com:~/.ssl
