@@ -1,6 +1,8 @@
 scp -r from to
-scp -r "/c/Users/gille/Google Drive/bookdb" docker@webnerdbot.com:/
+scp -r "/c/Users/gille/Google Drive/bookdb/" docker@192.168.1.101:/
 
-scp -r docker@webnerdbot.com:/bookdb "/c/Users/gille/Google Drive/"
+scp -r docker@192.168.1.101:/bookdb "/c/Users/gille/Google Drive/"
 
-scp -P 5936 -r "/c/Users/gille/Google Drive/sslforfree" docker@webnerdbot.com:~/.ssl
+scp -r "/c/Users/gille/Google Drive/sslforfree" docker@192.168.1.101:~/.ssl
+
+scp -r "/c/Users/gille/Google Drive/bookdb/CastleOfBlackIron" docker@192.168.1.101:/bookdb
