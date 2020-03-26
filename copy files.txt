@@ -1,8 +1,13 @@
 scp -r from to
-scp -r "/c/Users/gille/Google Drive/bookdb/" docker@192.168.1.101:/
 
-scp -r docker@192.168.1.101:/bookdb "/c/Users/gille/Google Drive/"
+C:\Users\gille\OneDrive\Documents\clark\bookdb
 
-scp -r "/c/Users/gille/Google Drive/sslforfree" docker@192.168.1.101:~/.ssl
+scp -r "/c/Users/gille/OneDrive/Documents/clark/bookdb/" docker@192.168.1.101:/data
 
-scp -r "/c/Users/gille/Google Drive/bookdb/CastleOfBlackIron" docker@192.168.1.101:/bookdb
+scp -r docker@192.168.1.101:/data/bookdb "/c/Users/gille/OneDrive/Documents/clark/"
+
+scp -r "/c/Users/gille/OneDrive/Documents/clark/bookdb/CastleOfBlackIron" docker@192.168.1.101:/data/bookdb
+
+scp -r "/c/Users/gille/Desktop/.well-known/acme-challenge" docker@192.168.1.101:/data/???/.well-known/
+
+scp -r "/c/Users/gille/Desktop/certs" docker@192.168.1.101:/data/???/.ssl/webnerdbot.com/new
